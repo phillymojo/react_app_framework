@@ -1,16 +1,20 @@
 import React from 'react';
 import $ from 'jquery';
 window.$ = $;
-import Navigation from './Navigation';
+import Header from './Header';
+import Body from './Body';
+import Footer from './Footer';
 
 var App = React.createClass({
 	render: function(){
 		return(
 			<div className="container">
-				<Navigation />
+				<Header />
+				<Body />
+				<Footer />
 			</div>
 		)
 	}
 })
 
-export default App;
+export default App; 
